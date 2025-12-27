@@ -55,11 +55,18 @@
         }
         iframe { width: 100%; height: 100%; border: none; }
 
-        .duaa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; }
+        .duaa-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+            gap: 15px; 
+        }
         .duaa-card {
             background: var(--card-bg); padding: 20px; border-radius: 12px;
             border-right: 4px solid var(--gold-color); line-height: 1.7;
+            font-size: 0.95rem;
+            transition: 0.3s;
         }
+        .duaa-card:hover { transform: translateY(-3px); background: #233625; }
 
         .sebha-box {
             text-align: center; background: var(--card-bg);
@@ -100,7 +107,7 @@
 
     <section class="dedication-banner">
         <div class="container">
-            <p>صدقة جارية على روح   </p>
+            <p>صدقة جارية على روح</p>
             <h1>عمي مصطفى محمد حسن</h1>
             <p>"اللهم اجعله في بطن القبر مطمئناً وعند قيام الأشهاد آمناً"</p>
         </div>
@@ -110,7 +117,7 @@
         <div class="tabs">
             <button class="tab-btn active" onclick="switchTab(event, 'radioSection')">الإذاعة</button>
             <button class="tab-btn" onclick="switchTab(event, 'quranSection')">المصحف المكتوب</button>
-            <button class="tab-btn" onclick="switchTab(event, 'duaaSection')">أدعية</button>
+            <button class="tab-btn" onclick="switchTab(event, 'duaaSection')">أدعية للمتوفى</button>
             <button class="tab-btn" onclick="switchTab(event, 'sebhaSection')">السبحة</button>
         </div>
 
@@ -130,9 +137,58 @@
 
         <div id="duaaSection" class="content-section">
             <div class="duaa-grid">
-                <div class="duaa-card">اللهم ارحم عمي "مصطفى محمد حسن" واغفر له.</div>
-                <div class="duaa-card">اللهم اجعل القرآن ربيع قلبه ونور صدره.</div>
-                <div class="duaa-card">اللهم نقه من الذنوب كما ينقى الثوب الأبيض من الدنس.</div>
+                <div class="duaa-card">اللهم ارحم عمي "مصطفى محمد حسن" واغفر له وعافه واعف عنه.</div>
+                <div class="duaa-card">اللهم أكرم نزله ووسع مدخله واغسله بالماء والثلج والبرد.</div>
+                <div class="duaa-card">اللهم نقه من الخطايا كما ينقى الثوب الأبيض من الدنس.</div>
+                <div class="duaa-card">اللهم أبدله داراً خيراً من داره، وأهلاً خيراً من أهله.</div>
+                <div class="duaa-card">اللهم أدخله الجنة وأعذه من عذاب القبر ومن عذاب النار.</div>
+                <div class="duaa-card">اللهم إنه في ذمتك وحبل جوارك، فقه فتنة القبر وعذاب النار.</div>
+                <div class="duaa-card">اللهم اغفر لحينا وميتنا، وشاهدنا وغائبنا، وصغيرنا وكبيرنا.</div>
+                <div class="duaa-card">اللهم من أحييته منا فأحيه على الإسلام، ومن توفيته منا فتوفه على الإيمان.</div>
+                <div class="duaa-card">اللهم لا تحرمنا أجره ولا تضلنا بعده.</div>
+                <div class="duaa-card">اللهم إنه عبدك وابن عبدك، خرج من روح الدنيا وسعتها إلى ظلمة القبر.</div>
+                <div class="duaa-card">اللهم ثبته عند السؤال.. اللهم ثبته عند السؤال.. اللهم ثبته عند السؤال.</div>
+                <div class="duaa-card">اللهم كان يشهد أنك لا إله إلا أنت وأن محمداً عبدك ورسولك وأنت أعلم به.</div>
+                <div class="duaa-card">اللهم إن كان محسناً فزد في حسناته، وإن كان مسيئاً فتجاوز عن سيئاته.</div>
+                <div class="duaa-card">اللهم آته برحمتك ورضاك، وقهِ فتنة القبر وعذابه.</div>
+                <div class="duaa-card">اللهم آته بالأمن من عذابك حتى تبعثه إلى جنتك يا أرحم الراحمين.</div>
+                <div class="duaa-card">اللهم انقله من مواطن الدود وضيق اللحود إلى جنات الخلود.</div>
+                <div class="duaa-card">اللهم ارحمه تحت الأرض، واستره يوم العرض، ولا تخزه يوم يبعثون.</div>
+                <div class="duaa-card">اللهم يمّن كتابه، ويسّر حسابه، وثقّل بالحسنات ميزانه.</div>
+                <div class="duaa-card">اللهم اجعل قبره روضة من رياض الجنة ولا تجعله حفرة من حفر النار.</div>
+                <div class="duaa-card">اللهم آنس وحدته، وآنس وحشته، وآنس غربته.</div>
+                <div class="duaa-card">اللهم اجعل عن يمينه نوراً، وعن شماله نوراً، ومن أمامه نوراً، ومن تحته نوراً.</div>
+                <div class="duaa-card">اللهم بشره بقولك "كلوا واشربوا هنيئاً بما أسلفتم في الأيام الخالية".</div>
+                <div class="duaa-card">اللهم اجعله من الذين سعدوا في الجنة خالدين فيها ما دامت السماوات والأرض.</div>
+                <div class="duaa-card">اللهم شفع فيه نبينا ومصطفاك، واحشره تحت لوائه، واسقه من يده الشريفة.</div>
+                <div class="duaa-card">اللهم ارزقه لذة النظر إلى وجهك الكريم، والشوق إلى لقائك.</div>
+                <div class="duaa-card">اللهم اكتبه عندك من الصالحين والصديقين والشهداء والأبرار.</div>
+                <div class="duaa-card">اللهم افتح له باباً من الجنة لا يسد أبداً.</div>
+                <div class="duaa-card">اللهم املأ قبره بالرضا والنور والفسحة والسرور.</div>
+                <div class="duaa-card">اللهم اجعل القرآن الكريم ربيع قلبه ونور صدره وجلاء حزنه.</div>
+                <div class="duaa-card">اللهم لَقِّهِ برحمتك الأمن من عذابك حتى تبعثه إلى جنتك.</div>
+                <div class="duaa-card">اللهم اغفر له وارحمه واعف عنه وأكرم منزله.</div>
+                <div class="duaa-card">يا رب إن رحمتك وسعت كل شيء، فارحمه رحمة تطمئن بها نفسه.</div>
+                <div class="duaa-card">اللهم جازه عن الإحسان إحساناً، وعن الإساءة عفواً وغفراناً.</div>
+                <div class="duaa-card">اللهم باعد بينه وبين خطايا كما باعدت بين المشرق والمغرب.</div>
+                <div class="duaa-card">اللهم اجعل ذريته صالحة تدعو له بخير إلى يوم الدين.</div>
+                <div class="duaa-card">اللهم ارحم من كسر قلوبنا برحيله، اللهم ارحم من اشتقنا له.</div>
+                <div class="duaa-card">اللهم اجعله ممن يقال لهم "ادخلوها بسلام آمنين".</div>
+                <div class="duaa-card">اللهم ارفع درجته في المهديين، واخلفه في عقبه في الغابرين.</div>
+                <div class="duaa-card">اللهم ارحمنا إذا صرنا إلى ما صاروا إليه.</div>
+                <div class="duaa-card">اللهم اجعل ملتقانا به في الفردوس الأعلى من الجنة.</div>
+                <div class="duaa-card">اللهم إنك عفو تحب العفو فاعف عنه.</div>
+                <div class="duaa-card">اللهم اجعل مسكنه جنات النعيم بجوار المصطفى ﷺ.</div>
+                <div class="duaa-card">اللهم ارزقه شفاعة الحبيب المصطفى ﷺ.</div>
+                <div class="duaa-card">اللهم ثبته بالقول الثابت في الحياة الدنيا وفي الآخرة.</div>
+                <div class="duaa-card">اللهم ارفع ذكره في السماء واجعل له لسان صدق في الآخرين.</div>
+                <div class="duaa-card">اللهم نور له قبره ووسع له فيه مد بصره.</div>
+                <div class="duaa-card">اللهم اجعل القرآن شفيعاً له يوم القيامة.</div>
+                <div class="duaa-card">يا رب تقبل منه القليل وتجاوز عن الكثير.</div>
+                <div class="duaa-card">اللهم ارحم غربته وارحم شيبته.</div>
+                <div class="duaa-card">يا حي يا قيوم برحمتك نستغيث أن ترحم فقيدنا وتغفر له.</div>
+                <div class="duaa-card">اللهم إنك غني عن عذابه فلا تعذبه وارحمه يا رحيم.</div>
+                <div class="duaa-card">اللهم اجمعنا به على حوض نبيك محمد ﷺ.</div>
             </div>
         </div>
 
